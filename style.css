@@ -1,0 +1,433 @@
+body{
+    margin: 0px;
+    font-family:  sans-serif;
+    line-height: 1.5;
+    width: fit-content;
+}
+*{
+    box-sizing: border-box;
+}
+
+/*start aside bar  */
+aside{
+    width: 22%;
+    background-color: #f44336;
+    height: 100%;
+    top: 0px;
+    position: fixed;
+}
+
+aside .asideContainer{
+    margin: 100px 30px;
+}
+
+aside .asideContainer h2{
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+aside .asideContainer .menu ul  {
+    line-height: 2;
+    padding: 0px;
+}
+
+aside .asideContainer .menu ul  a{
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    padding:5px;
+    font-weight: bold;
+    font-size: 18px;
+    width: 100%;
+}
+
+aside .asideContainer .menu ul  a:hover{
+    background-color: #ffffff;
+    color: #000;
+}
+
+@media (max-width:1100px) {
+aside{
+    width: 100%;
+    top: 0px;
+    position: fixed;
+    height: 80px;
+    z-index: 10;
+}
+aside .asideContainer {
+    margin: 0px;
+}
+aside .asideContainer h2 {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+}
+aside .asideContainer .menu ul {
+    display: none;
+}
+}
+/*end aside bar  */
+/* start header  */
+.main{
+    margin-left: 340px;
+    margin-right: 40px;
+}
+.headContainer{
+    margin-top: 80px;
+}
+.headContainer h1{
+    color: black;
+    font-size: 64px;
+    margin-bottom: 0px;
+}
+.headContainer h2{
+    margin-top: 0;
+    margin-bottom: -10px;
+    color: black;
+    font-size: 48px;
+    color: rgb(244, 67, 54);
+}
+
+.headContainer p{
+    font-size: 16px;
+    font-weight: lighter;
+    font-family: 'poppins';
+    line-height: 1.5;
+}
+hr{
+    margin: 20px 0px;
+}
+@media (max-width:1100px) {
+    .main {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+                .headContainer {
+                    margin-top: 80px;
+                }
+        
+                .headContainer h1 {
+                    color: black;
+                    font-size: 38px;
+                    margin-bottom: 0px;
+                }
+        
+                .headContainer h2 {
+                    margin-top: 0;
+                    margin-bottom: -10px;
+                    color: black;
+                    font-size: 32px;
+                    color: rgb(244, 67, 54);
+                }
+        
+                .headContainer p {
+                    font-size: 16px;
+                    font-weight: lighter;
+                    font-family: 'poppins';
+                    line-height: 1.5;
+                }
+        
+                hr {
+                    margin: 20px 0px;
+                }
+}
+/* end header  */
+
+
+.imageContainer{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 10px;
+    row-gap: 5px;
+}
+
+.imageContainer img{
+    width: 100%;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.imageContainer img:hover{
+    opacity: 1;
+}
+
+
+/* overlay */
+
+.popOverlay {
+    background-color: #000;
+    position: fixed;
+    top: 0px;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+}
+
+.popupImg {
+    background-color: #ffffff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 500px;
+    z-index: 3;
+}
+
+.popupImg img {
+    max-width: 100%;
+}
+
+.caption {
+    position: fixed;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: 100;
+    color: #f6f6f6;
+    z-index: 3;
+}
+@media (max-width:1100px) {
+    .imageContainer {
+            display: block;
+        }
+    
+        .imageContainer img {
+            width: 100%;
+            cursor: pointer;
+            opacity: 0.8;
+        }
+    
+        .imageContainer img:hover {
+            opacity: 1;
+        }
+
+                .popOverlay {
+                    background-color: #000;
+                    position: fixed;
+                    top: 0px;
+                    z-index: 3;
+                    width: 100%;
+                    height: 100%;
+                }
+        
+                .popupImg {
+                    background-color: #ffffff;
+                    position: fixed;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 300px;
+                    height: 400px;
+                    z-index: 3;
+                }
+}
+
+
+
+
+
+/* start designers  */
+.designersMembers{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 20px;
+}
+
+.member{
+    background-color: #eee;
+}
+
+.member img{
+    width: 100%;
+}
+.member .title{
+    padding: 0px 20px;
+}
+.member h5{
+    margin-top: 10px;
+    font-size: 26px;
+    color: #000;
+    font-family: serif;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+.member h6{
+    margin-top: -40px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Times New Roman', Times, serif;
+    color: #9b9b9b;
+}
+
+.member p{
+    color: #3c3c3c;
+    font-weight: 500;
+    font-family: 'poppins';
+    margin-top: -30px;
+    line-height: 1.5;
+}
+
+
+@media (max-width:1100px) {
+    .designersMembers {
+            display: block;
+        }
+
+                .member p {
+                   padding-bottom: 30px;
+                }
+}
+
+/* end designers  */
+
+/* start packages  */
+.pricePackages{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: -40px;
+}
+
+.pricePackages .half .price{
+    list-style-type: none;
+    text-align: center;
+}
+
+.pricePackages .half .price .headHalf1{
+    padding: 20px 32px;
+    background-color: #616161;
+    font-size: 24px;
+    color: white;
+}
+.pricePackages .half .price .headHalf2 {
+    padding: 20px 32px;
+    background-color: #f44336;
+    font-size: 24px;
+    color: white;
+}
+.pricePackages .half .price li{
+    border-bottom: 1px solid #00000018;
+}
+.pricePackages .half .price .pad16{
+    padding: 16px;
+    background-color: #f1f1f1;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.pricePackages .half .price .pad32{
+    padding: 1px 32px;
+    background-color: #f1f1f1;
+}
+
+.pricePackages .half .price .pad32 h4{
+    font-size: 36px;
+    font-weight: 100;
+    margin: 10px 0;
+}
+
+.pricePackages .half .price p{
+    color: #9b9b9b;
+    font-size: 20px;
+    margin: 10px 0px;    
+}
+
+.pricePackages .half .price .button1{
+    padding:20px 32px;
+    background-color: #f1f1f1;
+}
+
+.pricePackages .half .price .button2{
+    padding:20px 32px;
+    background-color: #f1f1f1;
+}
+.pricePackages .half .price .button1  button{
+    border: none;
+    background-color: white;
+    padding: 15px 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.pricePackages .half .price .button2  button{
+    border: none;
+    background-color: #f44336;
+    padding: 15px 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+}
+.pricePackages .half .price .button1 button:hover {
+    background-color: #000;
+    color: white;
+}
+.pricePackages .half .price .button2 button:hover {
+    background-color: #000;
+    color: white;
+}
+
+@media (max-width:1100px) {
+    .pricePackages {
+            display: block;
+            margin-left: -40px;
+        }
+}
+/* end packages  */
+
+
+/* start contact  */
+.contact form input{
+    width: 100%;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+}
+
+.contact form input[type="submit"]{
+    border: none;
+    padding: 15px 0px;
+    width: 100.5%;
+    background-color: #f44336;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+@media (max-width:1100px) {
+    .contact form input {
+            width: 100%;
+            padding: 10px 0px;
+            margin-bottom: 30px;
+        }
+}
+/* end contact  */
+
+footer{
+    background-color: #f1f1f1;
+    text-align: right;
+    padding: 30px;
+    color: #000;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+@media (max-width:1100px) {
+    footer{
+        text-align: center;
+    }
+    
+}
+
+footer p a{
+    color: #000;
+}
+
+footer p a:hover{
+    color: #3c3c3c;
+}
